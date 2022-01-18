@@ -1,0 +1,72 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "JavaScript Template",
+        "version": "0.1.0",
+        "description": "todo",
+        "contact": {
+            "email": "todo"
+        }
+    },
+    "tags": [
+        {
+            "name": "todo",
+            "description": "todo"
+        }        
+    ],
+    "schemes": [
+        "https",
+        "http"
+    ],
+    "paths": {
+        "/health": {
+            "get": {
+                "tags": [
+                    "todo"
+                ],
+                "summary": "todo",
+                "description": "todo",
+                "operationId": "health",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "query1",
+                        "in": "query",
+                        "description": "todo",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "todo",
+                        "schema": {
+                            "$ref": "#/definitions/HealthcheckResponse"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "HealthcheckResponse": {
+            "type": "object",
+            "properties": {
+                "status": {
+                    "type": "string",
+                    "enum": [
+                        "OK"
+                    ]
+                }
+            }
+        }
+    },
+    "externalDocs": {
+        "description": "todo",
+        "url": "www.example.com"
+    }
+}

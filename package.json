@@ -1,0 +1,49 @@
+{
+  "name": "js-template",
+  "version": "0.1.0",
+  "description": "JavaScript Template",
+  "author": "Alex Pereverzyev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexPereverzyev/js"
+  },
+  "keywords": [
+    "javascript",
+    "template"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "format": "prettier --write 'src/**/*.js' 'test/**/*.js'",
+    "lint": "eslint . --ext .js",
+    "test": "mocha",
+    "coverage": "nyc mocha",
+    "debug": "DEBUG=* node index.js",
+    "start": "node src/index.js",
+    "watch": "nodemon --config .nodemon.json",
+    "stats": "sloc src/ -f cli-table -k total,source,comment",
+    "hooks": "husky install"
+  },
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "koa-send": "^5.0.1",
+    "koa-static": "^5.0.0",
+    "swagger-ui-dist": "4.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "husky": "^7.0.4",
+    "mocha": "^9.1.3",
+    "nodemon": "^2.0.15",
+    "nyc": "^15.1.0",
+    "prettier": "^2.5.1",
+    "sinon": "^12.0.1",
+    "sloc": "^0.2.1"
+  }
+}
