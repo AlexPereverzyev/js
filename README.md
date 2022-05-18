@@ -32,5 +32,5 @@ http://localhost:8080/
 docker build . -t template-js:test --target=test
 docker run --name template-js-test -d template-js:test
 docker build . -t template-js:runtime --target=runtime
-docker run --name template-js-runtime  -p 8080:8080 -d template-js:runtime npm start
+docker run --name template-js-runtime -p 8080:8080 -d template-js:runtime
 ```
