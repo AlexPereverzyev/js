@@ -12,14 +12,14 @@
     "javascript",
     "template"
   ],
-  "main": "src/index.js",
+  "main": "server.js",
   "scripts": {
-    "format": "prettier --write 'src/**/*.js' 'test/**/*.js'",
-    "lint": "eslint . --ext .js",
+    "format": "prettier --write 'server.js' 'src/**/*.js' 'test/**/*.js'",
+    "lint": "eslint . --ext .js --fix",
     "test": "mocha",
     "coverage": "nyc mocha",
-    "debug": "DEBUG=* node index.js",
-    "start": "node src/index.js",
+    "debug": "DEBUG=* node server.js",
+    "start": "node server.js",
     "watch": "nodemon --config .nodemon.json",
     "stats": "sloc src/ -f cli-table -k total,source,comment",
     "hooks": "husky install"
@@ -30,7 +30,7 @@
     "koa-router": "^10.1.1",
     "koa-send": "^5.0.1",
     "koa-static": "^5.0.0",
-    "swagger-ui-dist": "4.1.2"
+    "swagger-ui-dist": "^4.1.2"
   },
   "devDependencies": {
     "chai": "^4.3.4",

@@ -6,6 +6,8 @@ JavaScript Web app template based on Koa Web framework, enhanced with all requir
 
 - Node.js 14+
 - Visual Studio Code
+- ESLint
+- Prettier
 - Mocha Test Explorer
 - Docker
 
@@ -24,7 +26,7 @@ Swagger UI is hosted on root path:
 http://localhost:8080/
 ```
 
-## Docker Builds
+## Docker
 
 ```
 docker build . -t template-js:test --target=test

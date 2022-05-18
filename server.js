@@ -1,6 +1,6 @@
 'use strict';
 
-const App = require('./app');
+const App = require('./src/app');
 
 const application = new App();
 const shutdown = () => application.stop();

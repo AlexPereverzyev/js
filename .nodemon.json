@@ -4,8 +4,8 @@
         "node_modules",
         "test"
     ],
-    "watch": "src/",
+    "watch": ["server.js", "src"],
     "ext": "js,json,proto",
     "delay": "1000",
-    "exec": "node src/index.js"
+    "exec": "node server.js"
 }
