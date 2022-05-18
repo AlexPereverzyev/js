@@ -2,6 +2,7 @@
   "all": true,
   "clean": true,
   "include": [
+    "server.js",
     "src/**/*.js"
   ],
   "exclude": [
